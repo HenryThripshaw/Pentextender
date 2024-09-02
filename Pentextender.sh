@@ -17,7 +17,7 @@ display_error() {
 sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y || display_error "Failed to update system."
 
 # Install necessary packages
-sudo apt install -y gobuster xxd dirsearch seclists mingw-w64 || display_error "Failed to install packages."
+sudo apt install -y gobuster xxd dirsearch feroxbuster seclists mingw-w64 || display_error "Failed to install packages."
 pip install pyftpdlib || display_error "Failed to install pyftpdlib."
 sudo apt install -y peass chisel ncat neo4j bloodhound kpcli || display_error "Failed to install packages."
 sudo apt install -y pipx git || display_error "Failed to install pipx and git."
