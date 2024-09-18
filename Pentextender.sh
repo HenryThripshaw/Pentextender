@@ -23,6 +23,7 @@ sudo apt install -y peass chisel ncat neo4j bloodhound kpcli || display_error "F
 sudo apt install -y pipx git || display_error "Failed to install pipx and git."
 pipx ensurepath || display_error "Failed to configure pipx."
 pipx install git+https://github.com/Pennyw0rth/NetExec || display_error "Failed to install NetExec."
+pip install git-dumper || display_error "Failed to install git-dumper."
 
 # Inform user about next steps
 echo "------------------------------------------------"
